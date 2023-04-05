@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/pattern-background-desktop.svg") no-repeat center/cover;
+  text-align: center;
+}
+body .container footer {
+  margin-top: 50px;
+}
+body .container footer p {
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+}
+
+.content {
+  width: 450px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+.content .img-hero {
+  border-radius: 10px 10px 0 0;
+}
+.content .content-text {
+  text-align: center;
+  padding: 50px;
+}
+.content .content-text h1 {
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+.content .content-text p {
+  color: hsl(224, 23%, 55%);
+}
+.content .content-subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(225, 100%, 94%);
+  justify-content: space-between;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px 8px;
+  border-radius: 10px;
+}
+.content .content-subscription a:hover {
+  text-decoration: none;
+}
+.content .content-subscription .text {
+  display: grid;
+  margin-right: 65px;
+}
+.content .content-subscription .text span:nth-child(1) {
+  font-weight: 900;
+}
+.content .content-subscription .text span:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+.content .content-subscription .icon {
+  margin-left: 10px;
+}
+
+.content-btn {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-btn button:nth-child(1) {
+  width: 350px;
+  padding: 20px 0;
+  border-radius: 10px;
+  border: none;
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  box-shadow: 2px 16px 25px rgba(114, 128, 167, 0.8);
+  cursor: pointer;
+}
+.content-btn button:nth-child(1):hover {
+  background: #6255e7;
+  color: hsl(225, 100%, 98%);
+  transition: all 0.3s ease;
+}
+.content-btn button:nth-child(2) {
+  margin-top: 40px;
+  border: none;
+  background: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.content-btn button:nth-child(2):hover {
+  color: rgba(31, 47, 86, 0.8);
+}
+
+@media (max-width: 1440px) {
+  .content-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .content-subscription {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    height: 90vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .content-subscription {
+    font-size: 18px;
+  }
+  .content-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-btn button:nth-child(1) {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .content-btn button:nth-child(2) {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .content {
+    height: 90vh;
+    width: auto;
+    margin: 0 auto;
+  }
+  .content-text {
+    font-size: 25px;
+  }
+  .content-subscription {
+    font-size: 20px;
+  }
+}
+.content-btn {
+  flex-direction: column;
+}
+.content-btn button:nth-child(1) {
+  width: 350px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.content-btn button:nth-child(2) {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.content-btn footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content-btn footer p:first-child {
+  margin-bottom: 5px;
+}
+.content-btn footer p:last-child {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

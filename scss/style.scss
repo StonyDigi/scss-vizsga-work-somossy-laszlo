@@ -1,0 +1,127 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/pattern-background-desktop.svg") no-repeat center/cover;
+    text-align: center;
+
+    .container {
+        footer {
+            margin-top: 50px;
+            p {
+            font-size: 13px;
+            color: $DesaturatedBlue;
+            }  
+        }
+    }
+}
+
+.content {
+    width: 450px;
+    background: $VeryPaleBlue;
+    border-radius: 10px;
+
+    .img-hero {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .content-text {
+        text-align: center;
+        padding: 50px;
+
+        h1 {
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        p {
+            color: $DesaturatedBlue;
+        }
+    }
+
+    .content-subscription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $PaleBlue;
+        justify-content: space-between;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px 8px;
+        border-radius: 10px;
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .text {
+            display: grid;
+            margin-right: 65px;
+
+            span:nth-child(1) {
+                font-weight: 900;
+            }
+
+            span:nth-child(2) {
+                color: $DesaturatedBlue;
+            }
+        }
+        
+        .icon {
+           margin-left: 10px;
+        }
+
+    }  
+}
+
+    .content-btn {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        button:nth-child(1) {
+            width: 350px;
+            padding: 20px 0;
+            border-radius: 10px;
+            border: none;
+            background: $BrightBlue;
+            color: $VeryPaleBlue;
+            font-weight: 700;
+            box-shadow: 2px 16px 25px rgba($color: $DesaturatedBlue, $alpha: 0.8);
+            cursor: pointer;
+        }
+
+        button:nth-child(1):hover {
+            background: lighten($BrightBlue, 10%);
+            color: $VeryPaleBlue;
+            transition: all 0.3s ease;
+          }
+
+        button:nth-child(2) {
+            margin-top: 40px;
+            border: none;
+            background: none;
+            color: $DesaturatedBlue;
+            font-weight: 700;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button:nth-child(2):hover {
+            color: rgba($color: $DarkBlue, $alpha: 0.8);        
+    }  
+}
+@import 'media';
